@@ -1,0 +1,63 @@
+/*-----reset-----*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; vertical-align: baseline; background: transparent; font-size: 100%; font-weight:normal;}
+a {margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent;}
+table {border-collapse: collapse; border-spacing: 0;}
+td, td img {vertical-align: top;} 
+li {margin:0; padding:0; list-style:none;}
+input, select, button, textarea {margin: 0; font-size: 100%;}
+input[type="text"], input[type="password"], textarea {padding: 0;}
+input[type="checkbox"] {vertical-align: bottom;}
+input[type="radio"] {vertical-align: text-bottom;}
+sub {vertical-align: sub; font-size: smaller;}
+sup {vertical-align: super; font-size: smaller;}
+/*-----base-----*/
+html {overflow-y: scroll;}
+body {line-height: 1; background: #fff; color: #333; text-align: left; font: 13px Verdana, "Geneva CY", "DejaVu Sans", sans-serif;}
+input, select, button, textarea {font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;}
+label, input[type="button"], input[type="submit"], button {cursor: pointer;}
+a, a:visited {color: #039; text-decoration: none; outline:none;}
+a:hover {color: #36c; text-decoration: underline;}
+a:focus, a:active {color: #039; text-decoration: underline;}
+/*-----clear-----*/
+.clear, .clr {clear:both; content:""; display:block; height:0; font-size:0; visibility:hidden;}
+.none {display:none;}
+em, i {font-style:italic;}
+strong, b {font-weight:bold; color:inherit;}
+/*-----Opera Fix-----*/
+body:before {content:""; height:100%; float:left; width:0; margin-top:-10000px;}
+/*-----FF Fix-----*/
+::-moz-focus-inner {border: 0;padding:0; margin:0;}
+
+.header {
+    text-align: center;
+    font-size: 36pt;
+    margin: 10pt;
+    margin-bottom: 90pt;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+    font-size: 14pt;
+    color: white;
+    background-color: cornflowerblue;
+    border-radius: 10px;  
+    padding: 5px;
+    display: inline-block;
+
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
