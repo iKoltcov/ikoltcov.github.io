@@ -3,7 +3,7 @@ $(document).ready(
         $('.button').click(
             function(){
                 $.ajax({
-                    url: 'http://localhost:7071/api/Function', //'https://ik-azuretest.azurewebsites.net/api/Function',
+                    url: 'https://ik-azuretest.azurewebsites.net/api/Function',
                     type: 'POST',
                     data: JSON.stringify(
                         { 
