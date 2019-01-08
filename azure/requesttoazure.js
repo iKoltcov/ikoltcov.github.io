@@ -15,7 +15,11 @@ $(document).ready(
                     },
                     success: function(data)
                     {
-                        alert(JSON.stringify(data));
+                        $('.data-wrapper').show(500);
+                        $('.data').html(JSON.stringify(data));
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){
+                        $('.data-wrapper').hide(500);
                     }
                 });
             }
