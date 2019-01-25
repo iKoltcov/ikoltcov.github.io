@@ -16,6 +16,7 @@ $(document).ready(
                     success: function(data)
                     {
                         $('.data-wrapper').show(500);
+                        $('.data').css('background-color', 'cornflowerblue');
                         $('.data').html('Const: ' + JSON.stringify(data));
                     },
                     error: function(jqXHR, textStatus, errorThrown){
@@ -41,6 +42,7 @@ $(document).ready(
                     success: function(data)
                     {
                         $('.data-wrapper').show(500);
+                        $('.data').css('background-color', 'chocolate');
                         $('.data').html('Random: ' + JSON.stringify(data));
                     },
                     error: function(jqXHR, textStatus, errorThrown){
